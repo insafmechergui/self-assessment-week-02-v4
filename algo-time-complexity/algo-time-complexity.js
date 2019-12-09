@@ -13,7 +13,7 @@ var TimeComplexity = {
 };
 
 
-var sortedIndexOfTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var sortedIndexOfTimeComplexity =  TimeComplexity.log(n); // TODO: Update this constant
 
 var sortedIndexOf = function(array, targetElement) {
   var minIndex = 0;
@@ -37,8 +37,9 @@ var sortedIndexOf = function(array, targetElement) {
   return -1;
 };
 
+//
 
-var findDuplicatesTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var findDuplicatesTimeComplexity =  TimeComplexity.O(n); // TODO: Update this constant
 
 var findDuplicates = function(string) {
   var tracker = {};
@@ -56,8 +57,10 @@ var findDuplicates = function(string) {
   return result;
 };
 
+// O(n)
 
-var bruteForcePasswordTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+
+var bruteForcePasswordTimeComplexity =  TimeComplexity.O(n); // TODO: Update this constant
 
 var bruteForcePassword = function(max) {
   var alphabet = 'abcdefghijklmnopqrstuvwxyz';
@@ -76,8 +79,10 @@ var bruteForcePassword = function(max) {
   findPassword('');
 };
 
+// O(n)
 
-var hasDuplicatesTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+
+var hasDuplicatesTimeComplexity =  TimeComplexity.O(n); // TODO: Update this constant
 
 var hasDuplicates = function(array) {
   for (var i = 0; i < array.length; i++) {
@@ -89,9 +94,10 @@ var hasDuplicates = function(array) {
   return false;
 };
 
+// O(n)
 
 
-var removeLastThreeElementsTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+var removeLastThreeElementsTimeComplexity =  TimeComplexity.O(1); // TODO: Update this constant
 
 var removeLastThreeElements = function(array) {
   var numberOfElementsToRemove = 3;
@@ -101,8 +107,10 @@ var removeLastThreeElements = function(array) {
   }
 };
 
+//  O(1)
 
-var increasingStepTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+
+var increasingStepTimeComplexity =  TimeComplexity.O(n); // TODO: Update this constant
 
 var increasingStep = function(number) {
   for (var i = 1; i < number; i = i * 2) {
@@ -110,8 +118,10 @@ var increasingStep = function(number) {
   }
 };
 
+//  O(n)
 
-var makeRangeTimeComplexity =  TimeComplexity.FIX_ME; // TODO: Update this constant
+
+var makeRangeTimeComplexity =  TimeComplexity.O(n); // TODO: Update this constant
 
 var makeRange = function(array) {
   array.forEach(function(item) {
@@ -121,3 +131,5 @@ var makeRange = function(array) {
   });
 };
 
+//  O(n)
+  

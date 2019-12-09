@@ -37,6 +37,7 @@ var processData = function(data) {
   displayData({results: sortedData}, userSelected); // eslint-disable-line no-use-before-define
 };
 
+///
 var checkNewData = function(data) {
   var compDate = newestDate; // eslint-disable-line no-use-before-define
   var newDate = new Date(data.results[0].createdAt);
@@ -103,6 +104,10 @@ var displayData = function(data, user) {
     getData();
   });
 };
+
+/// postData is responsible for sending messages to the server
+//get is used for retriving data from the server
+//post is used to send data to the server
 
 var postData = function(message, username) {
   $.ajax({
